@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Units in Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempPokemon of pokemons">
+            <td class="align-middle">
+                <img src="{{ tempPokemon.imageUrl }}" alt="pokemon image" height="50">
+            </td>
+            <td class="align-middle">{{ tempPokemon.name }}</td>
+            <td class="align-middle">{{ tempPokemon.unitPrice }}</td>
+            <td class="align-middle">{{ tempPokemon.unitsInStock }}</td>
+        </tr>
+    </tbody>
+</table>
